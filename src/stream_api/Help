@@ -1,0 +1,65 @@
+Operações Intermediárias:
+
+    filter(Predicate): Filtra elementos com base em uma condição.
+
+    map(Function): Transforma os elementos do fluxo para outro tipo ou formato.
+
+    flatMap(Function): Transforma os elementos em vários outros e os concatena em um único fluxo.
+
+    distinct(): Remove elementos duplicados.
+
+    sorted(): Ordena os elementos em ordem natural.
+
+    sorted(Comparator): Ordena os elementos de acordo com um comparador.
+
+    peek(Consumer): Permite observar cada elemento enquanto ele passa pelo fluxo.
+
+    limit(long n): Limita o número de elementos no fluxo.
+
+    skip(long n): Ignora os primeiros n elementos.
+
+Operações Finais:
+
+    forEach(Consumer): Executa uma ação para cada elemento do fluxo.
+
+    collect(Collector): Coleta os elementos em uma coleção ou outro tipo de estrutura.
+
+    reduce(BinaryOperator): Reduz os elementos a um único valor.
+
+    toArray(): Converte os elementos do fluxo para um array.
+
+    count(): Retorna o número de elementos no fluxo.
+
+    findFirst(): Retorna o primeiro elemento do fluxo, caso exista.
+
+    findAny(): Retorna qualquer elemento do fluxo, útil em fluxos paralelos.
+
+    allMatch(Predicate): Verifica se todos os elementos correspondem a uma condição.
+
+    anyMatch(Predicate): Verifica se pelo menos um elemento corresponde a uma condição.
+
+    noneMatch(Predicate): Verifica se nenhum elemento corresponde a uma condição.
+
+Operações de Agregação:
+
+    Essas operações são úteis para cálculos matemáticos sobre os elementos:
+
+    sum(): Retorna a soma dos elementos (disponível em IntStream, LongStream e DoubleStream).
+
+    average(): Calcula a média dos elementos.
+
+    max(): Retorna o maior elemento.
+
+    min(): Retorna o menor elemento.
+
+    summaryStatistics(): Retorna estatísticas como soma, média, mínimo e máximo em um único objeto.
+
+Operações Específicas de Streams Primitivos
+
+    Além dos métodos mencionados, os streams específicos para tipos primitivos (IntStream, LongStream, DoubleStream) oferecem métodos adicionais:
+
+    range(startInclusive, endExclusive): Cria um fluxo de valores dentro de um intervalo.
+
+    rangeClosed(startInclusive, endInclusive): Similar ao anterior, mas inclui o último valor.
+
+    boxed(): Converte um stream primitivo em um stream de objetos (Integer, Long, Double).
